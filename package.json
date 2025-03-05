@@ -2,7 +2,17 @@
   "name": "@donerui/base",
   "version": "0.0.1",
   "description": "Base components, utilities and hooks for donerui ecosystem",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "pack": "npm run build && npm pack",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/donerui/base.git"
@@ -15,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/donerui/base/issues"
   },
-  "homepage": "https://github.com/donerui/base#readme"
+  "homepage": "https://github.com/donerui/base#readme",
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/react": "^18.3.18",
+    "typescript": "^5.8.2"
+  }
 }
