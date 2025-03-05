@@ -1,0 +1,19 @@
+{
+  "name": "@donerui/base",
+  "version": "0.0.1",
+  "description": "Base components, utilities and hooks for donerui ecosystem",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donerui/base.git"
+  },
+  "keywords": [
+    "donerui"
+  ],
+  "author": "Döner UI Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donerui/base/issues"
+  },
+  "homepage": "https://github.com/donerui/base#readme"
+}
