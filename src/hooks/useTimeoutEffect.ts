@@ -1,7 +1,11 @@
 import { useEffect, useRef } from 'react'
 
-export function useTimeoutEffect (callback: () => void, delay: number, deps?: React.DependencyList): void {
-  const timeoutId = useRef<NodeJS.Timeout>()
+export function useTimeoutEffect(
+  callback: () => void,
+  delay: number,
+  deps?: React.DependencyList,
+): void {
+  const timeoutId = useRef<NodeJS.Timeout>(undefined)
 
   useEffect(() => {
     timeoutId.current = setTimeout(callback, delay)
